@@ -41,9 +41,9 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 
 
 # Bot credentials from environment variables (Render compatible)
-API_ID = int(os.environ.get("API_ID", 28201702))
-API_HASH = os.environ.get("API_HASH", "31c9bbed9c688b89736d94da7e89653b")
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "8184860937:AAHwv-3je_aCtOTk3jZkHuRCTKTAKCdQlCk")
+API_ID = int(os.environ.get("API_ID", ))
+API_HASH = os.environ.get("API_HASH", "")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
 
 # Initialize Bot Globally (IMPORTANT FIX)
 bot = Client("bot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
